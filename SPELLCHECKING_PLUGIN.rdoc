@@ -39,7 +39,7 @@ By default, Spellchecking calls "/controller/spellchecker". But this won't alway
 Also, if you want to have other languages spellchecked, make sure they're installed for Aspell to use and then add to the comma delimited value of :spellchecker_languages in the format of
 
   FriendlyName=code
-  
+
 So the value for English, French, German and Spanish would look like this for example
 
   :spellchecker_languages => "+English=en,French=fr,German=de,Spanish=es",
