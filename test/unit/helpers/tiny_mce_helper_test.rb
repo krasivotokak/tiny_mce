@@ -1,5 +1,5 @@
 require File.dirname(__FILE__) + '/../../test_helper'
-require 'action_view/test_case' 
+require 'action_view/test_case'
 
 class TinyMCEHelpersTest < ActionView::TestCase
 
@@ -94,7 +94,7 @@ class TinyMCEHelpersTest < ActionView::TestCase
       raw_tiny_mce_init({ 'invalid_option' => true })
     end
   end
-  
+
   test "exception when plugins option is not an array" do
     assert_raise TinyMCEInvalidOptionType do
       raw_tiny_mce_init({'plugins' => 'invalid as a string'})
