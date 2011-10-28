@@ -25,7 +25,7 @@ module TinyMCE
 
       unless options['plugins'].nil?
         raise TinyMCEInvalidOptionType.new("Invalid value of type #{options['plugins'].class} passed for TinyMCE option plugins") unless options['plugins'].kind_of?(Array)
-        
+
         # Append the plugins we have enabled for this field to the OptionsValidator
         TinyMCE::OptionValidator.plugins += options['plugins']
       end
